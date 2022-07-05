@@ -1,0 +1,10 @@
+{ "timeout": 1000,
+  "lightname": {
+      "flashRate": "off",
+      "color": "red"
+   }
+}
+
+// flashRate = off, slow, medium, quick, continuous
+// color = red, green, yellow, blue, cyan, magenta, white
+// lightname = ticketprinter, receiptprinter, creditcard, nfccreditcard, pin, carddispenser, nfcreader, barcodereader, cashrecycler

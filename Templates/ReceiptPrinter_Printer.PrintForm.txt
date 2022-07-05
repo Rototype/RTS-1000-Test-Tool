@@ -1,0 +1,19 @@
+{ 
+	"timeout": 10000 
+	"formName": "Form1",
+	"fields": {
+		"title": "Ticket",
+		"text1": "text1 string",
+		"textlines": [
+                        "textlines 1 string",
+                        "textlines 2 string",
+                        "textlines 3 string",
+                        "textlines 4 string",
+                        "textlines 5 string"
+                     ]
+		"barcode1": "www.rototype.com",
+	}
+	"mediaControl": {
+		"expel": true
+	}
+}
