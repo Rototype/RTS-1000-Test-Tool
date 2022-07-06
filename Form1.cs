@@ -205,9 +205,9 @@ namespace RTS_1000_Test_Tool
                     break;
                 case 6: // NFC Reader
                     comboBox2.Items.Add("Common.Status");
-                    comboBox2.Items.Add("NfcReader.Reset");
-                    comboBox2.Items.Add("NfcReader.SendFile");
-                    comboBox2.Items.Add("NfcReader.ReadRawData");
+                    comboBox2.Items.Add("BarcodeReader.Reset");
+                    comboBox2.Items.Add("BarcodeReader.SendFile");
+                    comboBox2.Items.Add("BarcodeReader.ReadRawData");
                     break;
             }
           
