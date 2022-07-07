@@ -227,17 +227,23 @@ namespace RTS_1000_Test_Tool
         {
             int rid = RequestId.NewID();
             
-            if ((comboBox1.Text == "") || (comboBox2.Text == ""))
+            if ((comboBox1.Text == "") || (comboBox2.Text == "")|| (textBox9.Text == ""))
             {
                 MessageBox.Show("invalid command", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
+            }
+
+            StringBuilder sb = new StringBuilder();
+            foreach (string line in textBox9.Lines)
+            {
+                if (!line.StartsWith("//")) sb.AppendLine(line);
             }
 
             numericUpDown1.Value = rid;
             string jsonString ="{\"header\":{\"name\":" + "\"" + comboBox2.Text + "\"" + "," +
                                   "\"requestId\": "+ Convert.ToString(rid) + ","+
                                   "\"type\":\"command\"" + "}" +
-                                  ",\"payload\":"+textBox9.Text + "}";
+                                  ",\"payload\":"+sb.ToString() + "}";
 
             textBox10.AppendText(">>> Sending to " + (string)comboBox1.SelectedItem + Environment.NewLine);
             textBox10.AppendText(JsonPrettify(jsonString) + Environment.NewLine);
