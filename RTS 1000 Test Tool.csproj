@@ -40,6 +40,15 @@
     <None Update="Templates\Lights_Lights.SetLight.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Templates\NfcReader_BarcodeReader.Read.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\NfcReader_BarcodeReader.Reset.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\NfcReader_BarcodeReader.SendFile.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Templates\NfcReader_Common.Status.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
