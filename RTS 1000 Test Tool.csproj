@@ -76,6 +76,9 @@
     <None Update="Templates\ReceiptPrinter_Printer.PrintNative.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Templates\ReceiptPrinter_Printer.PrintRaw.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Templates\ReceiptPrinter_Printer.Reset.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -89,6 +92,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Templates\TicketPrinter_Printer.PrintNative.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\TicketPrinter_Printer.PrintRaw.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Templates\TicketPrinter_Printer.Reset.txt">
