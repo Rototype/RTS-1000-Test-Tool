@@ -1,6 +1,6 @@
 { 
 	"timeout": 10000, 
-	"inputdata": "no",
+	"inputData": "no",
 	"data": " UmF3RGF0YQ=="
 }
 
