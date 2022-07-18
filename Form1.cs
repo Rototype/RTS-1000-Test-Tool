@@ -190,6 +190,7 @@ namespace RTS_1000_Test_Tool
                     comboBox2.Items.Add("Printer.Reset");
                     comboBox2.Items.Add("Printer.PrintForm");
                     comboBox2.Items.Add("Printer.PrintNative");
+                    comboBox2.Items.Add("Printer.PrintRaw");
                     comboBox2.Items.Add("Printer.ControlMedia");
                     break;
                 case 4: // Ticket Printer
@@ -197,6 +198,7 @@ namespace RTS_1000_Test_Tool
                     comboBox2.Items.Add("Printer.Reset");
                     comboBox2.Items.Add("Printer.PrintForm");
                     comboBox2.Items.Add("Printer.PrintNative");
+                    comboBox2.Items.Add("Printer.PrintRaw");
                     comboBox2.Items.Add("Printer.ControlMedia");
                     break;
                 case 5: // Credit Card Pay
