@@ -52,13 +52,6 @@ namespace RTS_1000_Test_Tool
 
         private void button1_Click(object sender, EventArgs e)
         {
-            wsw[0] = WebSocketWrapper.Create(textBox1.Text,0);
-            wsw[0] = wsw[0].Connect();
-            wsw[0].OnConnect(ClientConnected);
-            wsw[0].OnDisconnect(ClientDisconnected);
-            wsw[0].OnMessage(ServerMessage);
-            wsw[0].OnException(ConnectionException);
-
             string jsonString = "{\"header\":{\"name\":" + "\"" + "ServicePublisher.GetServices" + "\"" + "," +
                       "\"requestId\": " + Convert.ToString(RequestId.NewID()) + "," +
                       "\"type\":\"command\"" + "}" +
@@ -90,6 +83,7 @@ namespace RTS_1000_Test_Tool
             }
             switch (id)
             {
+                case 0: pictureBox8.Image = Properties.Resources.Greendot; break;
                 case 1: pictureBox1.Image = Properties.Resources.Greendot; break;
                 case 2: pictureBox2.Image = Properties.Resources.Greendot; break;
                 case 3: pictureBox3.Image = Properties.Resources.Greendot; break;
@@ -109,6 +103,7 @@ namespace RTS_1000_Test_Tool
             }
             switch (id)
             {
+                case 0: pictureBox8.Image = Properties.Resources.Reddot; break;
                 case 1: pictureBox1.Image = Properties.Resources.Reddot; break;
                 case 2: pictureBox2.Image = Properties.Resources.Reddot; break;
                 case 3: pictureBox3.Image = Properties.Resources.Reddot; break;
@@ -273,30 +268,27 @@ namespace RTS_1000_Test_Tool
 
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void comboBox3_TextChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked)
-            {
-                textBox1.Text= textBox1.Text.Replace("localhost", "rototypedyn.dyndns.org");
-                textBox2.Text = textBox2.Text.Replace("localhost", "rototypedyn.dyndns.org");
-                textBox3.Text = textBox3.Text.Replace("localhost", "rototypedyn.dyndns.org");
-                textBox4.Text = textBox4.Text.Replace("localhost", "rototypedyn.dyndns.org");
-                textBox5.Text = textBox5.Text.Replace("localhost", "rototypedyn.dyndns.org");
-                textBox6.Text = textBox6.Text.Replace("localhost", "rototypedyn.dyndns.org");
-                textBox7.Text = textBox7.Text.Replace("localhost", "rototypedyn.dyndns.org");
-                textBox8.Text = textBox8.Text.Replace("localhost", "rototypedyn.dyndns.org");
-            }
-            else
-            {
-                textBox1.Text = textBox1.Text.Replace("rototypedyn.dyndns.org", "localhost");
-                textBox2.Text = textBox2.Text.Replace("rototypedyn.dyndns.org", "localhost");
-                textBox3.Text = textBox3.Text.Replace("rototypedyn.dyndns.org", "localhost");
-                textBox4.Text = textBox4.Text.Replace("rototypedyn.dyndns.org", "localhost");
-                textBox5.Text = textBox5.Text.Replace("rototypedyn.dyndns.org", "localhost");
-                textBox6.Text = textBox6.Text.Replace("rototypedyn.dyndns.org", "localhost");
-                textBox7.Text = textBox7.Text.Replace("rototypedyn.dyndns.org", "localhost");
-                textBox8.Text = textBox8.Text.Replace("rototypedyn.dyndns.org", "localhost");
-            }
+            textBox1.Text = "ws://" + comboBox3.Text + ":5846/xfs4iot/v1.0";
+            textBox2.Text = "ws://" + comboBox3.Text + ":5846/xfs4iot/v1.0/barcodereader";
+            textBox3.Text = "ws://" + comboBox3.Text + ":5846/xfs4iot/v1.0/lights";
+            textBox4.Text = "ws://" + comboBox3.Text + ":5846/xfs4iot/v1.0/auxiliaries";
+            textBox5.Text = "ws://" + comboBox3.Text + ":5846/xfs4iot/v1.0/ticketprinter";
+            textBox6.Text = "ws://" + comboBox3.Text + ":5846/xfs4iot/v1.0/receiptprinter";
+            textBox7.Text = "ws://" + comboBox3.Text + ":5846/xfs4iot/v1.0/ccpay";
+            textBox8.Text = "ws://" + comboBox3.Text + ":5846/xfs4iot/v1.0/nfcreader";
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            wsw[0] = WebSocketWrapper.Create(textBox1.Text, 0);
+            wsw[0] = wsw[0].Connect();
+            wsw[0].OnConnect(ClientConnected);
+            wsw[0].OnDisconnect(ClientDisconnected);
+            wsw[0].OnMessage(ServerMessage);
+            wsw[0].OnException(ConnectionException);
         }
     }
 }

@@ -30,7 +30,10 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -70,6 +73,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -95,7 +99,10 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.checkBox1);
+            this.tabPage1.Controls.Add(this.button5);
+            this.tabPage1.Controls.Add(this.pictureBox8);
+            this.tabPage1.Controls.Add(this.label13);
+            this.tabPage1.Controls.Add(this.comboBox3);
             this.tabPage1.Controls.Add(this.pictureBox7);
             this.tabPage1.Controls.Add(this.pictureBox6);
             this.tabPage1.Controls.Add(this.pictureBox5);
@@ -130,21 +137,54 @@
             this.tabPage1.Text = "General Settings";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // button5
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(698, 38);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(90, 19);
-            this.checkBox1.TabIndex = 7;
-            this.checkBox1.Text = "External test";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.button5.Location = new System.Drawing.Point(520, 56);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(142, 23);
+            this.button5.TabIndex = 10;
+            this.button5.Text = "Connect";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::RTS_1000_Test_Tool.Properties.Resources.Graydot;
+            this.pictureBox8.Location = new System.Drawing.Point(460, 59);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(21, 21);
+            this.pictureBox8.TabIndex = 9;
+            this.pictureBox8.TabStop = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(21, 17);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(39, 15);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "Server";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "localhost",
+            "192.168.1.94",
+            "rototypedyn.dyndns.org"});
+            this.comboBox3.Location = new System.Drawing.Point(65, 14);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(215, 23);
+            this.comboBox3.TabIndex = 7;
+            this.comboBox3.TextChanged += new System.EventHandler(this.comboBox3_TextChanged);
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = global::RTS_1000_Test_Tool.Properties.Resources.Graydot;
-            this.pictureBox7.Location = new System.Drawing.Point(550, 269);
+            this.pictureBox7.Location = new System.Drawing.Point(550, 291);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(21, 21);
@@ -154,7 +194,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::RTS_1000_Test_Tool.Properties.Resources.Graydot;
-            this.pictureBox6.Location = new System.Drawing.Point(550, 240);
+            this.pictureBox6.Location = new System.Drawing.Point(550, 262);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(21, 21);
@@ -164,7 +204,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::RTS_1000_Test_Tool.Properties.Resources.Graydot;
-            this.pictureBox5.Location = new System.Drawing.Point(550, 211);
+            this.pictureBox5.Location = new System.Drawing.Point(550, 233);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(21, 21);
@@ -174,7 +214,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::RTS_1000_Test_Tool.Properties.Resources.Graydot;
-            this.pictureBox4.Location = new System.Drawing.Point(550, 181);
+            this.pictureBox4.Location = new System.Drawing.Point(550, 203);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(21, 21);
@@ -184,7 +224,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::RTS_1000_Test_Tool.Properties.Resources.Graydot;
-            this.pictureBox3.Location = new System.Drawing.Point(549, 152);
+            this.pictureBox3.Location = new System.Drawing.Point(549, 174);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(21, 21);
@@ -194,7 +234,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::RTS_1000_Test_Tool.Properties.Resources.Graydot;
-            this.pictureBox2.Location = new System.Drawing.Point(550, 123);
+            this.pictureBox2.Location = new System.Drawing.Point(550, 145);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(21, 21);
@@ -204,7 +244,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::RTS_1000_Test_Tool.Properties.Resources.Graydot;
-            this.pictureBox1.Location = new System.Drawing.Point(550, 95);
+            this.pictureBox1.Location = new System.Drawing.Point(550, 117);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(21, 21);
@@ -213,66 +253,66 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(147, 269);
+            this.textBox8.Location = new System.Drawing.Point(147, 291);
             this.textBox8.Margin = new System.Windows.Forms.Padding(2);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(400, 23);
             this.textBox8.TabIndex = 5;
-            this.textBox8.Text = "ws://localhost:5846//xfs4iot/v1.0/nfcreader";
+            this.textBox8.Text = "ws://localhost:5846/xfs4iot/v1.0/nfcreader";
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(147, 240);
+            this.textBox7.Location = new System.Drawing.Point(147, 262);
             this.textBox7.Margin = new System.Windows.Forms.Padding(2);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(400, 23);
             this.textBox7.TabIndex = 5;
-            this.textBox7.Text = "ws://localhost:5846//xfs4iot/v1.0/ccpay";
+            this.textBox7.Text = "ws://localhost:5846/xfs4iot/v1.0/ccpay";
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(147, 211);
+            this.textBox6.Location = new System.Drawing.Point(147, 233);
             this.textBox6.Margin = new System.Windows.Forms.Padding(2);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(400, 23);
             this.textBox6.TabIndex = 5;
-            this.textBox6.Text = "ws://localhost:5846//xfs4iot/v1.0/receiptprinter";
+            this.textBox6.Text = "ws://localhost:5846/xfs4iot/v1.0/receiptprinter";
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(147, 181);
+            this.textBox5.Location = new System.Drawing.Point(147, 203);
             this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(400, 23);
             this.textBox5.TabIndex = 5;
-            this.textBox5.Text = "ws://localhost:5846//xfs4iot/v1.0/ticketprinter";
+            this.textBox5.Text = "ws://localhost:5846/xfs4iot/v1.0/ticketprinter";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(145, 152);
+            this.textBox4.Location = new System.Drawing.Point(145, 174);
             this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(400, 23);
             this.textBox4.TabIndex = 5;
-            this.textBox4.Text = "ws://localhost:5846//xfs4iot/v1.0/auxiliaries";
+            this.textBox4.Text = "ws://localhost:5846/xfs4iot/v1.0/auxiliaries";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(145, 123);
+            this.textBox3.Location = new System.Drawing.Point(145, 145);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(400, 23);
             this.textBox3.TabIndex = 5;
-            this.textBox3.Text = "ws://localhost:5846//xfs4iot/v1.0/lights";
+            this.textBox3.Text = "ws://localhost:5846/xfs4iot/v1.0/lights";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(145, 95);
+            this.textBox2.Location = new System.Drawing.Point(145, 117);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(400, 23);
             this.textBox2.TabIndex = 4;
-            this.textBox2.Text = "ws://localhost:5846//xfs4iot/v1.0/barcodereader";
+            this.textBox2.Text = "ws://localhost:5846/xfs4iot/v1.0/barcodereader";
             // 
             // button2
             // 
@@ -287,7 +327,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(483, 35);
+            this.button1.Location = new System.Drawing.Point(666, 55);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(142, 23);
@@ -299,7 +339,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(21, 272);
+            this.label8.Location = new System.Drawing.Point(21, 294);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(69, 15);
@@ -309,7 +349,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(21, 243);
+            this.label7.Location = new System.Drawing.Point(21, 265);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(89, 15);
@@ -319,7 +359,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(21, 215);
+            this.label6.Location = new System.Drawing.Point(21, 237);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(84, 15);
@@ -329,7 +369,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 185);
+            this.label5.Location = new System.Drawing.Point(21, 207);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 15);
@@ -339,7 +379,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 156);
+            this.label4.Location = new System.Drawing.Point(21, 178);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 15);
@@ -349,7 +389,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 127);
+            this.label3.Location = new System.Drawing.Point(21, 149);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(39, 15);
@@ -359,7 +399,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 98);
+            this.label2.Location = new System.Drawing.Point(21, 120);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 15);
@@ -369,7 +409,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 37);
+            this.label1.Location = new System.Drawing.Point(21, 59);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(28, 15);
@@ -378,12 +418,12 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(56, 35);
+            this.textBox1.Location = new System.Drawing.Point(56, 57);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(400, 23);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "ws://localhost:5846//xfs4iot/v1.0";
+            this.textBox1.Text = "ws://localhost:5846/xfs4iot/v1.0";
             // 
             // tabPage2
             // 
@@ -559,6 +599,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -614,7 +655,10 @@
         private System.Windows.Forms.Button button3;
         private NumericUpDown numericUpDown1;
         private Button button4;
-        private CheckBox checkBox1;
+        private Label label13;
+        private ComboBox comboBox3;
+        private Button button5;
+        private PictureBox pictureBox8;
     }
 }
 
