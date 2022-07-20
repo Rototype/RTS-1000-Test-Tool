@@ -30,6 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -94,6 +95,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.checkBox1);
             this.tabPage1.Controls.Add(this.pictureBox7);
             this.tabPage1.Controls.Add(this.pictureBox6);
             this.tabPage1.Controls.Add(this.pictureBox5);
@@ -127,6 +129,17 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "General Settings";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(698, 38);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(90, 19);
+            this.checkBox1.TabIndex = 7;
+            this.checkBox1.Text = "External test";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // pictureBox7
             // 
@@ -601,6 +614,7 @@
         private System.Windows.Forms.Button button3;
         private NumericUpDown numericUpDown1;
         private Button button4;
+        private CheckBox checkBox1;
     }
 }
 
