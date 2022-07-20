@@ -565,8 +565,8 @@
             "BarcodeReader",
             "Lights",
             "Auxiliaries",
-            "ReceiptPrinter",
             "TicketPrinter",
+            "ReceiptPrinter",
             "CreditCardPay",
             "NfcReader"});
             this.comboBox1.Location = new System.Drawing.Point(83, 15);
