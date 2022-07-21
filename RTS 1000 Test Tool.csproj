@@ -70,6 +70,9 @@
     <None Update="Templates\ReceiptPrinter_Printer.ControlMedia.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Templates\ReceiptPrinter_Printer.LoadDefinition.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Templates\ReceiptPrinter_Printer.PrintForm.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -86,6 +89,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Templates\TicketPrinter_Printer.ControlMedia.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\TicketPrinter_Printer.LoadDefinition.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Templates\TicketPrinter_Printer.PrintForm.txt">

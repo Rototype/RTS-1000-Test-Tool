@@ -187,6 +187,7 @@ namespace RTS_1000_Test_Tool
                     comboBox2.Items.Add("Printer.PrintNative");
                     comboBox2.Items.Add("Printer.PrintRaw");
                     comboBox2.Items.Add("Printer.ControlMedia");
+                    comboBox2.Items.Add("Printer.LoadDefinition");
                     break;
                 case 4: // Ticket Printer
                     comboBox2.Items.Add("Common.Status");
@@ -195,6 +196,7 @@ namespace RTS_1000_Test_Tool
                     comboBox2.Items.Add("Printer.PrintNative");
                     comboBox2.Items.Add("Printer.PrintRaw");
                     comboBox2.Items.Add("Printer.ControlMedia");
+                    comboBox2.Items.Add("Printer.LoadDefinition");
                     break;
                 case 5: // Credit Card Pay
                     comboBox2.Items.Add("Common.Status");
@@ -289,6 +291,24 @@ namespace RTS_1000_Test_Tool
             wsw[0].OnDisconnect(ClientDisconnected);
             wsw[0].OnMessage(ServerMessage);
             wsw[0].OnException(ConnectionException);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                OpenFileDialog ofd = new OpenFileDialog();
+                StringBuilder sb = new StringBuilder();
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    foreach (string s in File.ReadLines(ofd.FileName))
+                    {
+                        sb.Append(s); sb.Append("\\n");
+                    }
+                    textBox9.Text = textBox9.Text.Replace("##DEFINITION##", sb.ToString());
+                }
+            }
+            catch { }
         }
     }
 }
