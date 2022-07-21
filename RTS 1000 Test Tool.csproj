@@ -106,6 +106,12 @@
     <None Update="Templates\TicketPrinter_Printer.Reset.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Templates\VGSRototypeReceipt.form">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\VGSRototypeReceipt.media">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

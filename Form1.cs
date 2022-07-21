@@ -152,13 +152,20 @@ namespace RTS_1000_Test_Tool
 
         public static string JsonPrettify(string json)
         {
-            using (var stringReader = new StringReader(json))
-            using (var stringWriter = new StringWriter())
+            try
             {
-                var jsonReader = new JsonTextReader(stringReader);
-                var jsonWriter = new JsonTextWriter(stringWriter) { Formatting = Formatting.Indented };
-                jsonWriter.WriteToken(jsonReader);
-                return stringWriter.ToString();
+                using (var stringReader = new StringReader(json))
+                using (var stringWriter = new StringWriter())
+                {
+                    var jsonReader = new JsonTextReader(stringReader);
+                    var jsonWriter = new JsonTextWriter(stringWriter) { Formatting = Formatting.Indented };
+                    jsonWriter.WriteToken(jsonReader);
+                    return stringWriter.ToString();
+                }
+            }
+            catch
+            {
+                return "Invalid JSON\r\n";
             }
         }
 
@@ -298,6 +305,8 @@ namespace RTS_1000_Test_Tool
             try
             {
                 OpenFileDialog ofd = new OpenFileDialog();
+                ofd.InitialDirectory = Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location), "Templates");
+                ofd.Filter = "Media files (*.media)|*.media|Form files (*.form)|*.form|All files (*.*)|*.*";
                 StringBuilder sb = new StringBuilder();
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
