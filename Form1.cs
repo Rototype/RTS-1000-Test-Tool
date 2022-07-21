@@ -298,6 +298,8 @@ namespace RTS_1000_Test_Tool
             try
             {
                 OpenFileDialog ofd = new OpenFileDialog();
+                ofd.InitialDirectory = Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location), "Templates");
+                ofd.Filter = "Media files (*.media)|*.media|Form files (*.form)|*.form|All files (*.*)|*.*";
                 StringBuilder sb = new StringBuilder();
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
