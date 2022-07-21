@@ -303,7 +303,8 @@ namespace RTS_1000_Test_Tool
                 {
                     foreach (string s in File.ReadLines(ofd.FileName))
                     {
-                        sb.Append(s); sb.Append("\\n");
+                        string s1 = s.Replace("\"", "\\\"");
+                        sb.Append(s1); sb.Append("\\n");
                     }
                     textBox9.Text = textBox9.Text.Replace("##DEFINITION##", sb.ToString());
                 }
