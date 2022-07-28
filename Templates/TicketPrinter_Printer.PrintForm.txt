@@ -5,7 +5,7 @@
     "alignment":"formDefinition",
     "fields": {
         "ReceiptHeader": "VGS Rototype Sample Receipt",
-        "ReceiptText": "Multiline Receipt Example\nMultiline!",
+        "ReceiptText": "Multiline text:\n This is multiline!",
         "Barcode": "www.vgs.com"
 	},
 	"mediaControl": {

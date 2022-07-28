@@ -1,5 +1,5 @@
 XFSMEDIA "VGSRototypeReceipt"
 BEGIN
     UNIT MM, 1, 1
-    SIZE 80, 150
+    SIZE 80, 400
 END

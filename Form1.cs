@@ -191,7 +191,6 @@ namespace RTS_1000_Test_Tool
                     comboBox2.Items.Add("Common.Status");
                     comboBox2.Items.Add("Printer.Reset");
                     comboBox2.Items.Add("Printer.PrintForm");
-                    comboBox2.Items.Add("Printer.PrintNative");
                     comboBox2.Items.Add("Printer.PrintRaw");
                     comboBox2.Items.Add("Printer.ControlMedia");
                     comboBox2.Items.Add("Printer.LoadDefinition");
@@ -200,7 +199,6 @@ namespace RTS_1000_Test_Tool
                     comboBox2.Items.Add("Common.Status");
                     comboBox2.Items.Add("Printer.Reset");
                     comboBox2.Items.Add("Printer.PrintForm");
-                    comboBox2.Items.Add("Printer.PrintNative");
                     comboBox2.Items.Add("Printer.PrintRaw");
                     comboBox2.Items.Add("Printer.ControlMedia");
                     comboBox2.Items.Add("Printer.LoadDefinition");
@@ -304,6 +302,7 @@ namespace RTS_1000_Test_Tool
         {
             try
             {
+                comboBox2_SelectedIndexChanged(null,EventArgs.Empty);
                 OpenFileDialog ofd = new OpenFileDialog();
                 ofd.InitialDirectory = Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location), "Templates");
                 ofd.Filter = "Media files (*.media)|*.media|Form files (*.form)|*.form|All files (*.*)|*.*";
