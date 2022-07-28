@@ -1,4 +1,4 @@
-{
+﻿{
     "timeout": 10000, 
     "formName": "VGSRototypeReceipt",
     "mediaName":"VGSRototypeReceipt",
