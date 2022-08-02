@@ -205,7 +205,10 @@ namespace RTS_1000_Test_Tool
                     break;
                 case 5: // Credit Card Pay
                     comboBox2.Items.Add("Common.Status");
+                    comboBox2.Items.Add("CCPay.Reset");
                     comboBox2.Items.Add("CCPay.RequestPayment");
+                    comboBox2.Items.Add("CCPay.ReverseLastPayment");
+                    comboBox2.Items.Add("CCPay.CloseDay");
                     break;
                 case 6: // NFC Reader
                     comboBox2.Items.Add("Common.Status");

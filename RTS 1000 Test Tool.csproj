@@ -37,6 +37,21 @@
     <None Update="Templates\BarcodeReader_Common.Status.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Templates\CCPay_CCPay.CloseDay.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\CCPay_CCPay.RequestPayment.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\CCPay_CCPay.Reset.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\CCPay_CCPay.ReverseLastPayment.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\CCPay_Common.Status.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Templates\Lights_Common.Status.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
