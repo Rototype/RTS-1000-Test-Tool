@@ -185,6 +185,7 @@ namespace RTS_1000_Test_Tool
                     break;
                 case 2: // Auxiliaries
                     comboBox2.Items.Add("Common.Status");
+                    comboBox2.Items.Add("Auxiliaries.Register");
                     comboBox2.Items.Add("Auxiliaries.SetAuxiliaries");
                     break;
                 case 3: // Receipt Printer
