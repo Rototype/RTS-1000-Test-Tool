@@ -226,7 +226,9 @@ namespace RTS_1000_Test_Tool
             try
             {
                 string Folder = Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location),"Templates");
-                textBox9.Text = File.ReadAllText(Path.Combine(Folder,comboBox1.Text + "_" + comboBox2.Text + ".txt"),Encoding.UTF8);
+                String text = File.ReadAllText(Path.Combine(Folder,comboBox1.Text + "_" + comboBox2.Text + ".txt"),Encoding.UTF8);
+                text = text.Replace("\n", "\r\n");
+                textBox9.Text = text;
             }
             catch { }
 
