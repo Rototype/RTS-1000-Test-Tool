@@ -49,6 +49,7 @@ BEGIN
     BEGIN
         POSITION 0, 0
         FOLLOWS "ReceiptText"
+        VERTICAL LAST
         SIZE 76, 16
         HORIZONTAL CENTER
         CLASS STATIC
@@ -62,6 +63,7 @@ BEGIN
     BEGIN
         POSITION 0, 0
         FOLLOWS "RototypeLogo"
+        VERTICAL LAST
         SIZE 76, 20        
         HORIZONTAL CENTER
         CLASS OPTIONAL
