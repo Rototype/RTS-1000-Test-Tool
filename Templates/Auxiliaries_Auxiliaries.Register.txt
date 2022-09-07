@@ -1,4 +1,5 @@
 {
    "timeout": 2000,
-   "cabinetFront": "register"
+   "cabinetFront": "register",
+   "ups": "register"
 }
