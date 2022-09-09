@@ -49,7 +49,7 @@ BEGIN
     BEGIN
         POSITION 0, 0
         FOLLOWS "ReceiptText"
-        VERTICAL LAST
+        VERTICAL COMPACT
         SIZE 76, 16
         HORIZONTAL CENTER
         CLASS STATIC
@@ -63,12 +63,12 @@ BEGIN
     BEGIN
         POSITION 0, 0
         FOLLOWS "RototypeLogo"
-        VERTICAL LAST
-        SIZE 76, 20        
+        VERTICAL COMPACT
+        SIZE 20, 20        
         HORIZONTAL CENTER
         CLASS OPTIONAL
         TYPE BARCODE
-        FONT "CODE128"
+        FONT "QR"
         POINTSIZE 3
         INITIALVALUE "www.rototype.com"
     END

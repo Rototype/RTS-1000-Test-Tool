@@ -1,5 +1,5 @@
 XFSMEDIA "VGSRototypeReceipt"
 BEGIN
     UNIT MM, 1, 1
-    SIZE 80, 0 // roll
+    SIZE 80, 0
 END
