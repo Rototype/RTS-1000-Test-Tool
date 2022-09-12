@@ -50,7 +50,7 @@ BEGIN
         POSITION 0, 0
         FOLLOWS "ReceiptText"
         VERTICAL COMPACT
-        SIZE 76, 16
+        SIZE 76, 20
         HORIZONTAL CENTER
         CLASS STATIC
         TYPE GRAPHIC
@@ -64,13 +64,27 @@ BEGIN
         POSITION 0, 0
         FOLLOWS "RototypeLogo"
         VERTICAL COMPACT
-        SIZE 20, 20        
+        SIZE 76, 20        
         HORIZONTAL CENTER
         CLASS OPTIONAL
         TYPE BARCODE
-        FONT "QR"
+        FONT "CODE128"
         POINTSIZE 3
         INITIALVALUE "www.rototype.com"
+    END
+
+    XFSFIELD "Space"
+    BEGIN
+        POSITION 0, 0
+        FOLLOWS "Barcode"
+        VERTICAL COMPACT
+        SIZE 76, 5       
+        HORIZONTAL CENTER
+        CLASS STATIC
+        TYPE GRAPHIC
+        SCALING ASIS
+        FORMAT "PNG"
+        INITIALVALUE "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQI12P4//8/AAX+Av7czFnnAAAAAElFTkSuQmCC"
     END
 
 END
