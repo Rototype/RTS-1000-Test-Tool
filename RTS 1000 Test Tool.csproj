@@ -22,6 +22,9 @@
     <None Update="Templates\Auxiliaries_Auxiliaries.Register.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Templates\Auxiliaries_Auxiliaries.SetAuxiliaries.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Templates\Auxiliaries_Auxilieries.SetAuxiliaries.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
