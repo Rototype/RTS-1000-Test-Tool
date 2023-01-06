@@ -583,7 +583,8 @@
             "TicketPrinter",
             "ReceiptPrinter",
             "CCPay",
-            "NfcReader"});
+            "NfcReader",
+            "CashPay"});
             this.comboBox1.Location = new System.Drawing.Point(83, 15);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";

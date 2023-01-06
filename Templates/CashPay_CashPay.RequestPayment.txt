@@ -1,0 +1,5 @@
+{
+     "timeout": 120000,
+     "currency": "EUR",
+     "amount": 300.25
+}

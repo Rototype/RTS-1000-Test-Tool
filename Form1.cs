@@ -217,8 +217,16 @@ namespace RTS_1000_Test_Tool
                     comboBox2.Items.Add("BarcodeReader.SendFile");
                     comboBox2.Items.Add("BarcodeReader.Read");
                     break;
+                case 7: // Cash Pay
+                    comboBox2.Items.Add("Common.Status");
+                    comboBox2.Items.Add("CashPay.Reset");
+                    comboBox2.Items.Add("CashPay.RequestPayment");
+                    comboBox2.Items.Add("CashPay.LoadCash");
+                    comboBox2.Items.Add("CashPay.EmptyCash");
+                    break;
+
             }
-          
+
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)

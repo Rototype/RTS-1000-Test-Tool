@@ -40,6 +40,18 @@
     <None Update="Templates\BarcodeReader_Common.Status.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Templates\CashPay_CashPay.EmptyCash.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\CashPay_CashPay.LoadCash.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\CashPay_CashPay.RequestPayment.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\CashPay_CashPay.Reset.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Templates\CCPay_CCPay.CloseDay.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
