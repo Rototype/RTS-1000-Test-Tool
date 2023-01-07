@@ -18,7 +18,7 @@ namespace RTS_1000_Test_Tool
 {
     public partial class Form1 : Form
     {
-        private WebSocketWrapper[] wsw = new WebSocketWrapper[8];
+        private WebSocketWrapper[] wsw = new WebSocketWrapper[9];
         private bool _onClosing;
 
 
