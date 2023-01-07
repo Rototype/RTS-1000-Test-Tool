@@ -34,6 +34,7 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -42,6 +43,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -51,6 +53,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -75,6 +78,7 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -104,6 +108,7 @@
             this.tabPage1.Controls.Add(this.pictureBox8);
             this.tabPage1.Controls.Add(this.label13);
             this.tabPage1.Controls.Add(this.comboBox3);
+            this.tabPage1.Controls.Add(this.pictureBox9);
             this.tabPage1.Controls.Add(this.pictureBox7);
             this.tabPage1.Controls.Add(this.pictureBox6);
             this.tabPage1.Controls.Add(this.pictureBox5);
@@ -112,6 +117,7 @@
             this.tabPage1.Controls.Add(this.pictureBox2);
             this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Controls.Add(this.textBox8);
+            this.tabPage1.Controls.Add(this.textBox11);
             this.tabPage1.Controls.Add(this.textBox7);
             this.tabPage1.Controls.Add(this.textBox6);
             this.tabPage1.Controls.Add(this.textBox5);
@@ -121,6 +127,7 @@
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.label8);
+            this.tabPage1.Controls.Add(this.label14);
             this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.label5);
@@ -181,6 +188,16 @@
             this.comboBox3.Size = new System.Drawing.Size(215, 23);
             this.comboBox3.TabIndex = 7;
             this.comboBox3.TextChanged += new System.EventHandler(this.comboBox3_TextChanged);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::RTS_1000_Test_Tool.Properties.Resources.Graydot;
+            this.pictureBox9.Location = new System.Drawing.Point(549, 320);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(21, 21);
+            this.pictureBox9.TabIndex = 6;
+            this.pictureBox9.TabStop = false;
             // 
             // pictureBox7
             // 
@@ -261,6 +278,15 @@
             this.textBox8.TabIndex = 5;
             this.textBox8.Text = "ws://localhost:5846/xfs4iot/v1.0/nfcreader";
             // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(147, 320);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(400, 23);
+            this.textBox11.TabIndex = 5;
+            this.textBox11.Text = "ws://localhost:5846/xfs4iot/v1.0/cashpay";
+            // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(147, 262);
@@ -317,7 +343,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(24, 354);
+            this.button2.Location = new System.Drawing.Point(21, 375);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(142, 31);
@@ -346,6 +372,16 @@
             this.label8.Size = new System.Drawing.Size(69, 15);
             this.label8.TabIndex = 1;
             this.label8.Text = "NFC Reader";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(21, 323);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(55, 15);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "Cash Pay";
             // 
             // label7
             // 
@@ -616,6 +652,7 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -676,6 +713,9 @@
         private Button button5;
         private PictureBox pictureBox8;
         private Button button6;
+        private PictureBox pictureBox9;
+        private TextBox textBox11;
+        private Label label14;
     }
 }
 

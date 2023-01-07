@@ -40,6 +40,7 @@ namespace RTS_1000_Test_Tool
             wsw[5] = WebSocketWrapper.Create(textBox6.Text,5);
             wsw[6] = WebSocketWrapper.Create(textBox7.Text,6);
             wsw[7] = WebSocketWrapper.Create(textBox8.Text,7);
+            wsw[8] = WebSocketWrapper.Create(textBox11.Text, 8);
             for (int i = 1; i < wsw.Length; i++)
             {
                 wsw[i] = wsw[i].Connect();
@@ -91,6 +92,7 @@ namespace RTS_1000_Test_Tool
                 case 5: pictureBox5.Image = Properties.Resources.Greendot; break;
                 case 6: pictureBox6.Image = Properties.Resources.Greendot; break;
                 case 7: pictureBox7.Image = Properties.Resources.Greendot; break;
+                case 8: pictureBox9.Image = Properties.Resources.Greendot; break;
             }
         }
 
@@ -111,6 +113,7 @@ namespace RTS_1000_Test_Tool
                 case 5: pictureBox5.Image = Properties.Resources.Reddot; break;
                 case 6: pictureBox6.Image = Properties.Resources.Reddot; break;
                 case 7: pictureBox7.Image = Properties.Resources.Reddot; break;
+                case 8: pictureBox9.Image = Properties.Resources.Reddot; break;
             }
         }
 
@@ -130,6 +133,7 @@ namespace RTS_1000_Test_Tool
                 case 5: pictureBox5.Image = Properties.Resources.Reddot; break;
                 case 6: pictureBox6.Image = Properties.Resources.Reddot; break;
                 case 7: pictureBox7.Image = Properties.Resources.Reddot; break;
+                case 8: pictureBox9.Image = Properties.Resources.Reddot; break;
             }
             if (id == 0) textBox10.AppendText("<<< Error from: Framework: ");
             else textBox10.AppendText("<<< Error from: " + (string)comboBox1.Items[id - 1]+": ");
@@ -297,6 +301,7 @@ namespace RTS_1000_Test_Tool
             textBox6.Text = "ws://" + comboBox3.Text + ":5846/xfs4iot/v1.0/receiptprinter";
             textBox7.Text = "ws://" + comboBox3.Text + ":5846/xfs4iot/v1.0/ccpay";
             textBox8.Text = "ws://" + comboBox3.Text + ":5846/xfs4iot/v1.0/nfcreader";
+            textBox11.Text = "ws://" + comboBox3.Text + ":5846/xfs4iot/v1.0/cashpay";
 
         }
 
