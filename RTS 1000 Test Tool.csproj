@@ -52,6 +52,9 @@
     <None Update="Templates\CashPay_CashPay.Reset.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Templates\CashPay_Common.Status.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Templates\CCPay_CCPay.CloseDay.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
