@@ -2,6 +2,6 @@
      "timeout": 120000,
      "bin": "notes",
 // or "1","2","3","4"
-     "number": 30
+     "num": 30
 }
 
